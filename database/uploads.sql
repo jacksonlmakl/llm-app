@@ -1,0 +1,6 @@
+    CREATE TABLE IF NOT EXISTS "UPLOADS" (
+        id SERIAL PRIMARY KEY,
+        user_id INTEGER NOT NULL,
+        file_url TEXT UNIQUE NOT NULL,
+        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    );
